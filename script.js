@@ -10,13 +10,13 @@ document.querySelectorAll('.toggleButton').forEach(function(button) {
         });
         
         document.querySelectorAll('.toggleButton').forEach(function(btn) {
-            btn.textContent = ' ';
+            btn.textContent = '';
         });
         
         if (!isVisible) {
             targetElement.classList.remove('hidden');
             targetElement.classList.add('visible');
-            this.textContent = ' ';
+            this.textContent = '';
         }
     });
 });

@@ -52,6 +52,9 @@
 .lista li:hover {
     transform: scale(1.1);
 }
+.logo img:hover {
+    transform: scale(1.1);
+}
 
 .carousel {
     position: relative;
@@ -210,50 +213,55 @@
     align-items: center;
     justify-content: center;
 }
+h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+}
 
 .menu1 {
     background-image: url(img/fon5.png);
-    width: 100%;
-    height: 37vh;
+    width: 95%;
+    height: 36vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     overflow: hidden;  
-    margin-bottom: 100px;
-    border-radius: 20px;
+    margin-bottom: 80px;
+    border-radius: 10px;
 }
 .menu2 {
     background-image: url(img/fon6.png);
-    width: 100%;
-    height: 37vh;
+    width: 95%;
+    height: 36vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     overflow: hidden;   
-    margin-bottom: 100px;
-    border-radius: 20px;
+    margin-bottom: 80px;
+    border-radius: 10px;
 }
 .menu3 {
-    background-image: url(img/fon1.png);
-    width: 100%;
-    height: 37vh;
+    background-image: url(img/fon.png);
+    width: 95%;
+    height: 36vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     overflow: hidden;   
-    margin-bottom: 100px;
-    border-radius: 20px;
+    margin-bottom: 80px;
+    border-radius: 10px;
 }
 .menu4 {
     background-image: url(img/fon7.png);
-    width: 100%;
-    height: 37vh;
+    width: 95%;
+    height: 36vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     overflow: hidden; 
-    margin-bottom: 100px;
-    border-radius: 20px;  
+    margin-bottom: 80px;
+    border-radius: 10px;  
 }
 .hidden {
     display: none;
@@ -266,9 +274,9 @@
     height: auto;
 }
 .carta {
-    width: 186vh;
+    width: 184vh;
     border: 1px solid #b29d7b;
-    height: 25vh;
+    height: 27vh;
     border-radius: 10px;
     color: white;
     font-size: 30px;
@@ -318,7 +326,7 @@ ul {
     background: black;
     padding: 80px 0;
     width: 100%;
-    height: 40vh;
+    height: 41vh;
 }
 
 .footer-row {
@@ -333,8 +341,8 @@ ul {
 
 .social-link a {
     display: inline-block;
-    min-height: 45px;
-    width: 40px;
+    min-height: 43px;
+    width: 42px;
     background-color: rgba(51, 51, 51, 0.726);
     margin: 0 10px 10px 0;
     text-align: center;
@@ -345,6 +353,33 @@ ul {
 
 .social-link a:hover {
     background-color: #b29d7b;
+}
+.social-icon {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.social-icon:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
 }
 
 .titulo-final{
@@ -368,6 +403,100 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .navbar {
+        padding: 30px 20px;
+    }
+
+    .logo {
+        margin-left: 50px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .carousel img {
+        height: 40vh;
+    }
+
+    .block {
+        width: 40%;
+        height: 50vh;
+        padding: 15px;
+    }
+
+    .block img {
+        width: 120px;
+    }
+
+    .block p {
+        font-size: 18px;
+    }
+
+    .titleSec1, .terminos, .seccionCompleta, .central, .title {
+        height: auto;
+        width: 100%;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .menu1 {
+        height: 25vh;
+        width: 90%;
+        margin-bottom: 90px;
+        background-image: url(img/mediaTdesayunos.png);
+    }
+    .menu2 {
+        height: 25vh;
+        width: 90%;
+        margin-bottom: 90px;
+        background-image: url(img/mediaTalmuerzos.png);
+    }
+    .menu3 {
+        height: 25vh;
+        width: 90%;
+        margin-bottom: 90px;
+        background-image: url(img/mediaTbebidas.png);
+    }
+    .menu4 {
+        height: 25vh;
+        width: 90%;
+        margin-bottom: 90px;
+        background-image: url(img/mediaTpostres.png);
+    }
+
+    .carta {
+        width: 100vh;
+        font-size: 24px;
+    }
+
+    .carta img {
+        width: 100px;
+    }
+
+    .nombreMenu {
+        font-size: 30px;
+    }
+    .relleno {
+        height: 15vh;
+    }
+
+    .contacto {
+        font-size: 24px;
+    }
+
+    .titulo-final {
+        font-size: 18px;
+    }
+
+    .footer {
+        padding: 50px 0;
+    }
 }
 
 @media (max-width: 768px) {
